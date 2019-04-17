@@ -19,7 +19,11 @@ public class DrawFrame extends JFrame {
 	
 	public static void main(String[] args)
 	{
-  
+  		DrawFrame frame = new DrawFrame("yeehaw");
+		frame.setSize(SIZE,SIZE);
+		frame.getContentPane().add(drawPanel, BorderLayout.CENTER);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);	
+		frame.setVisible(true);
 	}
 	
 }
